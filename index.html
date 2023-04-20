@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- method="get" helps to get the data in url /
+         "post" get the data in backend -->
+    <form action="./index3.html" target="_blank" method="get">
+        <!-- placeholder help to indicate what kind of
+            data you have to enter on that box -->
+            <!-- required attribute make the field mandatory means if you dont
+                 fillup the field it will not allow to submit -->
+        <label for="neme">Enter your name</label><br>
+        <input type="text" id="neme" placeholder="enter name" required><br>
+
+        <!-- If we use type="email" then it will allow only correct format of mail -->
+
+        <label for="mail">Email address</label><br>
+        <input type="email" id="mail" placeholder="mail" required><br>
+
+        <!-- type="password" helps to enter password in encrypted format -->
+        <label for="pwd">Enter password</label><br>
+        <input type="password" id="pwd" placeholder="password" required><br><br>
+
+        <!-- use of check box -->
+        <!-- for all checkbox and radiobutton we have to give separate 
+            label tag if we select on text it should check in checkbox -->
+        <label>Language</label><br>
+        <input type="checkbox" id="lang1" value="React" name="lang">
+        <label for="lang1">React</label><br>
+        <input type="checkbox" id="lang2" value="Angular" name="lang">
+        <label for="lang2">Angular</label><br>
+        <input type="checkbox" id="lang3" value="Vue" name="lang">
+        <label for="lang3">Vue</label><br><br>
+        <!-- use of radio button -->
+        <!-- checked attribute helps to give default ckeck -->
+        <label>Course</label><br>
+        <input type="radio" id="course1" value="MERN" name="course">
+        <label for="course1">MERN</label><br>
+        <input type="radio" id="course2" value="MEAN" name="course" checked>
+        <label for="course2">MEAN</label><br>
+        <input type="radio" id="course3" value="MEVN" name="course">
+        <label for="course3">MEVN</label><br><br>
+        
+        <!-- select tag is used to select one option from multiple dropdown -->
+        <!-- inside select tag option tag use for showing value  -->
+        
+        <label for="field">Select field</label>
+        <select name="field" id="field">
+            <option value="front end">front end</option>
+            <option value="back end">back end</option>
+            <option value="full stack">full stack</option>
+        </select><br><br>
+
+        <!-- textarea gives a place to enter address -->
+        <label for="area">Enter your address</label><br>
+        <textarea name="your address" id="area" cols="30" rows="10"></textarea><br>
+
+        <label for="mobileno">Enter mobile no</label><br>
+        <!-- type should be always (type="tel") tel is used to take telephone no , if we use type="tell" then 
+        it will take number and character 
+        if we use type="number" then we only able to enter number only-->
+        <!-- pattern="[0-9]"{3} helps to take 3 data from user 
+        whatever value we assigned under{} only that much data it will take -->
+
+        <input type="number" name="tell" id="mobileno" pattern="[0-9]{10}"/><br><br>
+        <!-- <input type="tel" id="phone" name="phone"
+       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+       required /> -->
+
+        <!-- table -->
+
+        <h1>TABLES</h1>
+        <a href="./index2.html">Click Here</a><br><br>
+        <!-- submit and reset -->
+        <input type="submit">
+        <input type="reset">
+
+    </form>
+</body>
+</html>
